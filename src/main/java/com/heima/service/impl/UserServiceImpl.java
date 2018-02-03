@@ -44,10 +44,6 @@ public class UserServiceImpl implements UserService {
 
     }
 
-    private void hehe(){
-        System.out.println("hehe");
-    }
-
     @Override
     public List<User2> findAll() {
         return userRepository.findAll();
