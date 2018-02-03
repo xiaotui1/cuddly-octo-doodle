@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet-path: /
+
+person:
+  name: 张三
+  age: 18
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///spring_boot
+    username: root
+    password: xuan
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+mybatis:
+  mapper-locations: classpath:com.heima.mapper/*.xml
+  type-aliases-package: com.heima.domain
+#  config-location: classpath:mybatis/mytatis.cfg.xml
